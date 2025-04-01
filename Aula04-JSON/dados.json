@@ -1,0 +1,25 @@
+{
+    "modelo": "Civic",
+    "ano": 2020,
+    "motor": 2.0,
+    "cambioAutomatico": false,
+    "placa": null,
+    "combustivel": [
+        "Gasolina",
+        "GNV"
+    ],
+    "proprietario": {
+        "nome": "Agatha",
+        "idade": 18
+    },
+    "opcionais": [
+        {
+            "nome": "Ar Condicionado",
+            "marca": "GelaMais"
+        },
+        {
+            "nome": "Rastreador Veicular",
+            "marca": "RatreiaMais"
+        }
+    ]
+}

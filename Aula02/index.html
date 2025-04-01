@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 - JS e JQuery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        hr {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .info {
+            margin-bottom: 10px;
+        }
+
+        .info strong {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        document.write("Bom dia!!!<br><br>")
+        console.log("Este é o console.")
+
+        pessoa = {
+            nome: "Mel",
+            idade: 24,
+            altura: 1.64,
+            formacoes: ["Técnico", "Graduação em ADS", "Pós-Gradução em Inteligência Artificial"],
+            namora: true,
+            companheiro: { nome: "Pedro", idade: 26 },
+            filho: [
+                { nome: "Azure", idade: 4 }
+            ],
+            endereco: null,
+            getInfos: function () {
+                return this.nome + " possui " + this.idade + " anos "
+            }
+        }
+
+        txt = "<hr>"
+        txt += '<div class="info"><strong>Nome:</strong> ' + pessoa.nome + '</div>'
+        txt += '<div class="info"><strong>Idade:</strong> ' + pessoa.idade + ' anos</div>'
+        txt += '<div class="info"><strong>Altura:</strong> ' + pessoa.altura + ' metros</div>'
+        txt += '<div class="info"><strong>Formações:</strong><br>'
+        pessoa.formacoes.forEach(form => {
+            txt += form + "<br>"
+        })
+        txt += '</div>'
+        if (pessoa.namora)
+            txt += '<div class="info"><strong>Companheiro(a):</strong> ' + pessoa.companheiro.nome + '</div>'
+        txt += '<div class="info"><strong>Filho(a):</strong><br>'
+        pessoa.filho.forEach(filho => {
+            txt += filho.nome + " - Idade: " + filho.idade + " anos<br>"
+        })
+        txt += '</div>'
+
+        document.write(txt)
+    </script>
+</body>
+
+</html>

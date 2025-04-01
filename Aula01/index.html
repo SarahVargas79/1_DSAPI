@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01</title>
+</head>
+
+<body>
+    <div id="container">Olá!!!</div>
+    <button onclick="darBomDia()">Click</button>
+
+    <hr>
+
+    <!-- Seção de Lista de Compras -->
+    <h2>Lista de Compras</h2>
+    <input type="text" id="item" placeholder="Digite um item para a lista">
+    <button onclick="adicionarItem()">Adicionar Item</button>
+
+    <ul id="listaCompras"></ul>
+
+    <script>
+        // Função para mostrar "Bom Dia"
+        var container = document.getElementById("container");
+        function darBomDia() {
+            container.innerHTML += "<br><i>Bom Dia !!!!</i>";
+            container.style.width = "200px";
+            container.style.background = "#f00";
+            container.style.color = "#fff";
+        }
+
+        // Função para adicionar itens na lista de compras
+        function adicionarItem() {
+            var item = document.getElementById("item");
+            var listaCompras = document.getElementById("listaCompras");
+
+            // Verificar se o campo de input não está vazio
+            // value - propriedade de um campo de entrada (como um <input>), e ela armazena o que o usuário digita ou seleciona nesse campo.
+            if (item.value !== "") {
+                var li = document.createElement("li");
+                //li - é o novo item da lista | textContent - apenas o texto. Ignora qualquer HTML dentro do elemento. | item.value - é o texto que o usuário digitou no campo de entrada.
+                li.textContent = item.value; // Adiciona o item à lista
+                listaCompras.appendChild(li); // Adiciona o <li> à lista de compras
+
+                // Limpar o campo de input
+                item.value = "";
+            } else {
+                alert("Por favor, digite um item para adicionar à lista.");
+            }
+        }
+    </script>
+</body>
+
+</html>
