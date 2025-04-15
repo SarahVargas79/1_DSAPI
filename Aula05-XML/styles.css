@@ -1,0 +1,53 @@
+body {
+  font-family: "Tahoma", sans-serif;
+  background-color: #f4f1ed;
+  color: #2b2b2b;
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: #7b3f00; /* cor terrosa */
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #c05915; /* azul vibrante para o botão */
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease; /* efeito de transição suave */
+}
+
+button:hover {
+  background-color: #e77021; /* azul mais escuro no hover */
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 700px;
+  background-color: #fffaf3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #d0b17a;
+  color: #7b3f00;
+  font-weight: bold;
+}
+
+td {
+  background-color: #fdfbf6;
+}

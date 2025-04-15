@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lista_clientes>
+    <cliente>
+        <id>1</id>
+        <nome>Arani Tupinambá</nome>
+        <altura>1.60</altura>
+    </cliente>
+
+    <cliente>
+        <id>2</id>
+        <nome>Kalil Dlamini</nome>
+        <altura>1.75</altura>
+    </cliente>
+
+    <cliente>
+        <id>3</id>
+        <nome>Jurema Pataxó</nome>
+        <altura>1.68</altura>
+    </cliente>
+
+    <cliente>
+        <id>4</id>
+        <nome>Omolu Zuberi</nome>
+        <altura>1.82</altura>
+    </cliente>
+
+    <cliente>
+        <id>5</id>
+        <nome>Ayana Quilombola</nome>
+        <altura>1.55</altura>
+    </cliente>
+</lista_clientes>
